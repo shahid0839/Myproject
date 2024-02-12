@@ -1,0 +1,231 @@
+body{
+    margin: 0px;
+}
+.Header{
+    position: sticky;
+    top: 0%;
+    z-index: 1;
+}
+#nav{
+display: flex;
+justify-content: center;
+align-items: cneter;
+    background-color: rgb(255, 255, 255);
+    overflow: hidden;
+}
+.Header img{
+    width: 120px;
+    margin-left: 100px;
+}
+.Header input{
+    border: 1px solid black;
+    width: 500px;
+    height: 40px;
+    border-radius: 150px;
+    padding-left: 29px;
+    background-color: rgb(222, 231, 244);
+}
+input::placeholder {
+    font: 17px sans-serif;
+}
+#search{
+    position: absolute;
+    padding-top: 17px;
+    padding-left: 26px;
+}
+#search-box{
+    margin-top: 7px;
+    margin-left: 20px;
+}
+ .login-cart{
+    position: relative;
+    margin-top: 10px;
+    margin-left: 1px;
+}
+.login-cart ul{
+    padding: 0px;
+    display: inline-flex;
+    list-style: none;
+}
+.login-cart ul li a{
+    color: inherit;
+ text-decoration: none;
+ display: inline-flex; /* Ensure both icon and text are inline */
+ align-items: center; 
+}
+.login-cart ul li{
+    color: inherit;
+ text-decoration: none;
+ margin-left: 60px;
+}
+.login-cart ul li a span{
+    margin-right: 5px;
+}
+.vertical-dots {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .vertical-dots span {
+    margin-left: 2px;
+    font-size: 12px; /* Adjust the font size to reduce the height */
+    line-height: 8px /* Adjust the margin as needed */
+  }
+  .items{
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+    margin-top: 40px;
+  }
+  .Product-img{
+    align-self: center;
+    width: 50px;
+    height: 50px;
+  }
+  .slide-show{
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    margin-top: 10%;
+  }
+  .wrapper{
+    display: flex;
+  }
+  .wrapper img{
+    width: 100%;
+    height: 100%;
+    animation: slide 10s infinite;
+  }
+  @keyframes slide {
+    0%{
+        transform: translate(0);
+    }
+    25%{
+        transform: translate(0);
+    }
+    30%{
+        transform: translate(-100%);
+    }
+    50%{
+        transform: translate(-100%);
+    }
+    55%{
+        transform: translate(-200%);
+    }
+    75%{
+        transform: translate(-200%);
+    }
+    80%{
+        transform: translate(-300%);
+    }
+    100%{
+        transform: translate(-300%);
+    }
+  }
+  .container{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+  .container img{
+    position: relative;
+    width: 150px;
+    height: 100px;
+    object-fit: cover;
+  padding-top: 20px;
+  padding-left: 30px;
+  }
+  .container div{
+    border: 0.5px solid rgb(194, 192, 192);
+    box-shadow: 1px;
+    margin: 10px;
+   width: 100%;
+  }
+  
+.container div h5{
+    font-size: 20px;
+    padding-left: 50px;
+    top: 103%;
+}
+.container div h6{
+    padding-top: 10px;
+    padding-left: 60px;
+    font-size: 15px;
+}
+.list-of-products h2{
+    margin: 30px;
+}
+.Random-Description h3{
+    padding: 10px;
+}
+
+.Random-Description p{
+    padding: 10px;
+}
+.About{
+    display: flex;
+    background-color: rgb(34, 33, 33);
+    height: 100%;
+}
+.wrapper-1{
+    display: flex;
+    justify-content: space-between;
+    border-right: 2px solid white;
+    width: 50%;
+}
+
+.About h3{
+    color: white;
+}
+.About h4{
+    color: white;
+}
+.wrapper-1 .ABOUT{
+    margin: 40px;
+}
+.wrapper-2{
+    display: flex;
+    justify-content: center;
+}
+.wrapper-2 .ABOUT{
+    margin-left: 50px;
+    margin-top: 40px;
+}
+ion-icon {
+    color: rgb(255, 255, 255);
+  }
+  .Container {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .row {
+    display: flex;
+  }
+  
+  .box {
+    flex: 1;
+    border: 1px solid #000;
+    margin: 10px; /* Just for spacing */
+    max-width: 200px; /* Adjust the maximum width as needed */
+    max-height: 200px; /* Adjust the maximum height as needed */
+    overflow: hidden
+  }
+  
+  .box img {
+    display: block;
+    width:100px;
+    padding-left: 10px;
+    height: auto; /* Let the browser adjust the height proportionally */
+  }
+  .text {
+    text-align: center;
+    margin-top: 5px; /* Adjust spacing between image and text */
+    color: black; /* Set text color */
+    position: relative; /* Ensure text is positioned relative to its parent container */
+    z-index: 1; /* Ensure text is stacked above the image */
+  }
+  
+      
+  
