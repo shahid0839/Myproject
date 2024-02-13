@@ -1,0 +1,176 @@
+body {
+    margin: 0;
+    background-color: whitesmoke;
+  }
+  .Header{
+    position: relative;
+    height: 90px;
+  }
+  .header-div {
+    background-color: white;
+    display: flex;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+  }
+  .logo img {
+    width: 60px;
+    height: 60px;
+    margin-left: 40px;
+    margin-top: 10px;
+  }
+  .logo {
+    display: flex;
+    position: relative;
+    min-width: 50%;
+  }
+  .logo p {
+    margin: 30px;
+  }
+  .logo p u {
+    font-size: 17px;
+    font-weight: bold;
+  }
+  .logo u#underline {
+    padding-bottom: 2px;
+    text-decoration: none;
+    border-bottom: 1px solid black;
+  }
+  .arrow {
+    border: solid rgb(234, 167, 135);
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    margin-left: 10px;
+  }
+  .down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+  }
+  .nav{
+    display: flex;
+    min-width: 48%;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .nav img{
+    width: 30px;
+    height: 30px;
+  }
+  .nav p{
+    margin-left: -40px;
+  }
+  .food-items{
+    
+    flex-wrap: wrap;
+    position: relative;
+    width: 70%;
+    left: 15%;
+    overflow: hidden;
+  }
+  
+  .food-items img{
+    width: 170px;
+    height: 170px;
+    object-fit: cover;
+    position: relative;
+    padding: 1px;
+  }
+  .food-items h2{
+    padding-left: 5px;
+    font-size: 25px;
+  }
+  .food{
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+    border-bottom: 1px solid rgb(226, 217, 217);
+    width: 100%;
+    height: auto;
+    margin-bottom: 150px;
+  }
+  .Top-restraurant{
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    justify-content: space-around;
+    position: relative;
+    margin-bottom: 10px;
+  }
+  .restraurant img{
+    object-fit: cover;
+    width: 100%;
+    border-radius: 20px;
+  }
+  .restraurant{
+    padding: 20px;
+   width: 300px;
+   height: 50%;
+   position: relative;
+   
+  }
+  .restraurant h3{
+    padding-left: 5px;
+  }
+  .restraurant div{
+    display: flex;
+    gap:2px;
+    flex-wrap: wrap;
+    align-items: center;
+    /* position: relative;
+    top: -20px;
+    left: 10px; */
+  }
+  .time p{
+    font-size: 18px;
+  }
+  .place{
+    position: absolute;
+    top: 85%;
+    color: rgb(112, 104, 104);
+  }
+  .time{
+    margin-top: -12%;
+  }
+  .Top-restraurant h2{
+    position: absolute;
+    left: 2%;
+    top: -20%;
+  }
+  .fliter{
+    display: flex;
+    justify-content: space-around;
+  }
+  .restaurant-online{
+    margin-top: 100px;
+  }
+  footer{
+    background-color: black;
+    padding: 40px 0;
+  }
+  .inner-footer{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 0;
+    padding: 0 20px;
+  }
+  .column-footer ul li{
+    color: white;
+    margin-left: 50px;
+  }
+  .column-footer{
+    flex: 1;
+    margin-right: 40px;
+  }
+  .column-footer h3{
+    font-size: 30px;
+    margin-bottom: 15px;
+    color: white;
+    margin-left: 50px;
+  }
+  .column_footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
