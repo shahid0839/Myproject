@@ -68,8 +68,8 @@ input::placeholder {
   
   .vertical-dots span {
     margin-left: 2px;
-    font-size: 12px; /* Adjust the font size to reduce the height */
-    line-height: 8px /* Adjust the margin as needed */
+    font-size: 12px; 
+    line-height: 8px;
   }
   .items{
     display: flex;
@@ -139,6 +139,7 @@ input::placeholder {
   .container div{
     border: 0.5px solid rgb(194, 192, 192);
     box-shadow: 1px;
+    border-radius: 20px;
     margin: 10px;
    width: 100%;
   }
