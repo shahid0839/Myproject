@@ -233,3 +233,76 @@
   new PureCounter();
 
 })()
+
+// Form validation function
+function validateForm() {
+  let valid = true;
+  // Validate name
+  let name = document.getElementById('name').value.trim();
+  if (name === '') {
+    document.getElementById('name-error').textContent = 'Please enter your name.';
+    valid = false;
+  } else {
+    document.getElementById('name-error').textContent = '';
+  }
+  // Validate email
+  let email = document.getElementById('email').value.trim();
+  let emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  if (email === '' || !emailPattern.test(email)) {
+    document.getElementById('email-error').textContent = 'Please enter a valid email address.';
+    valid = false;
+  } else {
+    document.getElementById('email-error').textContent = '';
+  }
+  // Validate subject
+  let subject = document.getElementById('subject').value.trim();
+  if (subject === '') {
+    document.getElementById('subject-error').textContent = 'Please enter a subject.';
+    valid = false;
+  } else {
+    document.getElementById('subject-error').textContent = '';
+  }
+  // Validate message
+  let message = document.getElementById('message').value.trim();
+  if (message === '') {
+    document.getElementById('message-error').textContent = 'Please enter a message.';
+    valid = false;
+  } else {
+    document.getElementById('message-error').textContent = '';
+  }
+  return valid;
+}
+
+// Form submission handler
+document.getElementById('contact-form').addEventListener('submit', function(event) {
+  if (!validateForm()) {
+    event.preventDefault(); // Prevent form submission if validation fails
+    document.querySelector('.error-message').textContent = 'Please fill in all the required fields.';
+  } else {
+    // If form is valid, clear all error messages
+    document.querySelectorAll('.error-message').forEach(function(element) {
+      element.textContent = '';
+    });
+  }
+});
+
+
+// const Nameerror = document.getElementById("name-error");
+// const Emailerror = document.getElementById("email-error");
+// const Subject = document.getElementById("subject");
+// const textbox = document.getElementById("text-box");
+
+// function validateName() {
+//   let Name = document.getElementById("name").value
+//   if (Name.length == 0) {
+//     Nameerror.innerText = ""
+//     return false;
+//   }
+//   if (!Name.match(/^[A-Za-z]*\s{1}[A-Za-z]*$/)) {
+//     Nameerror.innerText = "Write full Name"
+//     document.getElementById("name").classList.add("error"); 
+//   }
+//   else {
+//      Nameerror.innerText = ""
+//   }
+// }

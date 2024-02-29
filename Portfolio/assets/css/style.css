@@ -1460,3 +1460,13 @@ footer .credits {
 footer .credits a {
   color: #fff;
 }
+
+form span{
+  position: relative;
+  top: 2%;
+  left: 2%;
+  color: red;
+}
+.error{
+  border-color: red;
+}

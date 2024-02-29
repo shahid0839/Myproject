@@ -280,29 +280,33 @@
                       </h5>
                     </div>
                     <div>
-                 <form action="https://api.web3forms.com/submit" method="post" target="_parent" >
-              <div class="row">
-                <div class="col-md-6 form-group">
-                  <input type="hidden" name="access_key" value="d9eced38-fa1d-4190-beb4-2fa520dc452b">
-                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
-                </div>
-                <div class="col-md-6 form-group mt-3 mt-md-0">
-                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
-                </div>
-              </div>
-              <div class="form-group mt-3">
-                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
-              </div>
-              <div class="form-group mt-3">
-                <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
-              </div>
-              <div class="my-3">
-                <div class="loading">Loading</div>
-                <div class="error-message"></div>
-                <div class="sent-message">Your message has been sent. Thank you!</div>
-              </div>
-              <div class="text-center"><button type="submit">Send Message</button></div>
-            </form>
+                      <form id="contact-form" action="https://api.web3forms.com/submit" method="post" target="_parent">
+                        <div class="row">
+                          <div class="col-md-6 form-group">
+                            <input type="hidden" name="access_key" value="d9eced38-fa1d-4190-beb4-2fa520dc452b">
+                            <input type="text" name="name" class="form-control" id="name" placeholder="Your Name">
+                            <span id="name-error" class="error-message"></span>
+                          </div>
+                          <div class="col-md-6 form-group mt-3 mt-md-0">
+                            <input type="email" class="form-control" name="email" id="email" placeholder="Your Email">
+                            <span id="email-error" class="error-message"></span>
+                          </div>
+                        </div>
+                        <div class="form-group mt-3">
+                          <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject">
+                          <span id="subject-error" class="error-message"></span>
+                        </div>
+                        <div class="form-group mt-3">
+                          <textarea class="form-control" name="message" rows="5" id="message" placeholder="Message"></textarea>
+                          <span id="message-error" class="error-message"></span>
+                        </div>
+                        <div class="my-3">
+                          <div class="loading">Loading</div>
+                          <div class="error-message"></div>
+                          <div class="sent-message">Your message has been sent. Thank you!</div>
+                        </div>
+                        <div class="text-center"><button type="submit">Send Message</button></div>
+                      </form>
                     </div>
                   </div>
                   <div class="col-md-6">
