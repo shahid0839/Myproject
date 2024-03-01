@@ -276,8 +276,8 @@ function validateForm() {
 // Form submission handler
 document.getElementById('contact-form').addEventListener('submit', function(event) {
   if (!validateForm()) {
-    event.preventDefault(); // Prevent form submission if validation fails
-    document.querySelector('.error-message').textContent = 'Please fill in all the required fields.';
+    event.preventDefault();
+    // document.querySelector('.error-message').textContent = 'Please fill in all the required fields.';
   } else {
     // If form is valid, clear all error messages
     document.querySelectorAll('.error-message').forEach(function(element) {
@@ -286,23 +286,3 @@ document.getElementById('contact-form').addEventListener('submit', function(even
   }
 });
 
-
-// const Nameerror = document.getElementById("name-error");
-// const Emailerror = document.getElementById("email-error");
-// const Subject = document.getElementById("subject");
-// const textbox = document.getElementById("text-box");
-
-// function validateName() {
-//   let Name = document.getElementById("name").value
-//   if (Name.length == 0) {
-//     Nameerror.innerText = ""
-//     return false;
-//   }
-//   if (!Name.match(/^[A-Za-z]*\s{1}[A-Za-z]*$/)) {
-//     Nameerror.innerText = "Write full Name"
-//     document.getElementById("name").classList.add("error"); 
-//   }
-//   else {
-//      Nameerror.innerText = ""
-//   }
-// }
